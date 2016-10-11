@@ -16,7 +16,7 @@ class ViewController: UIViewController {
 
 	override func viewDidLoad() {
 		super.viewDidLoad()
-		startNewRound()
+		self.startNewRound()
 	}
 
 	override func didReceiveMemoryWarning() {
@@ -35,8 +35,8 @@ class ViewController: UIViewController {
 		let alert = UIAlertController(title: "Hello, World", message: message, preferredStyle: .alert)
 		let action = UIAlertAction(title: "OK", style: .default, handler: nil)
 		alert.addAction(action)
-		present(alert, animated: true, completion: nil)
-		startNewRound()
+		self.present(alert, animated: true, completion: nil)
+		self.startNewRound()
 	}
 	
 	@IBAction func sliderMoved(_ slider:UISlider) {
