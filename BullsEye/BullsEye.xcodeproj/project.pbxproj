@@ -60,8 +60,8 @@
 				C017A1631DACB8DF000A2C36 /* ViewController.swift */,
 				C0134F981DBB084C0059D676 /* AboutViewController.swift */,
 				C017A1651DACB8DF000A2C36 /* Main.storyboard */,
-				C017A1681DACB8DF000A2C36 /* Assets.xcassets */,
 				C017A16A1DACB8DF000A2C36 /* LaunchScreen.storyboard */,
+				C017A1681DACB8DF000A2C36 /* Assets.xcassets */,
 				C017A16D1DACB8DF000A2C36 /* Info.plist */,
 			);
 			path = BullsEye;
