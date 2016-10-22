@@ -105,8 +105,8 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
+                    <nil key="simulatedStatusBarMetrics"/>
                     <connections>
                         <outlet property="roundLabel" destination="HjI-b8-95H" id="I6h-U8-Zr6"/>
                         <outlet property="scoreLabel" destination="MFg-CL-v2E" id="NXz-lb-wcd"/>
@@ -149,6 +149,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <nil key="simulatedStatusBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fa0-kv-kWC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
