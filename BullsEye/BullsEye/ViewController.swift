@@ -23,6 +23,21 @@ class ViewController: UIViewController {
 		super.viewDidLoad()
 		startNewGame()
 		updateLabels()
+		
+		// Design of the slider
+		// two images for the thumb
+		let thumbImageNormal = UIImage(named: "SliderThumb-Normal")!
+		slider.setThumbImage(thumbImageNormal, for: .normal)
+		let thumbImageHighlighted = UIImage(named: "SliderThumb-Highlighted")!
+		slider.setThumbImage(thumbImageHighlighted, for: .highlighted)
+		let insets = UIEdgeInsets(top: 0, left: 14, bottom: 0, right: 14)
+		// two images for the track
+		let trackLeftImage = UIImage(named: "SliderTrackLeft")!
+		let trackLeftResizagle = trackLeftImage.resizableImage(withCapInsets: insets)
+		slider.setMinimumTrackImage(trackLeftResizagle, for: .normal)
+		let trackRightImage = UIImage(named: "SliderTrackRight")!
+		let trackRightResizable = trackRightImage.resizableImage(withCapInsets: insets)
+		slider.setMaximumTrackImage(trackRightResizable, for: .normal)
 	}
 
 	override func didReceiveMemoryWarning() {
