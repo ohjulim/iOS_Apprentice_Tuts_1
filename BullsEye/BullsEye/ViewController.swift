@@ -37,6 +37,12 @@ class ViewController: UIViewController {
 		slider.value = Float(currentValue)
 	}
 	
+	func startNewGame() {
+		score = 0
+		round = 0
+		startNewRound()
+	}
+	
 	func updateLabels() {
 		targetLabel.text = String(targetValue)
 		scoreLabel.text = String(score)
@@ -72,6 +78,11 @@ class ViewController: UIViewController {
 	
 	@IBAction func sliderMoved(_ slider:UISlider) {
 		currentValue = lroundf(slider.value)
+	}
+	
+	@IBAction func startOver(_ sender: UIButton) {
+		startNewGame()
+		updateLabels()
 	}
 
 
